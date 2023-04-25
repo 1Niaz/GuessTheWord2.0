@@ -6,11 +6,50 @@ body{
     font-family: 'Lilita One', sans-serif;
 }
 
+.circle1{
+    border-radius: 100%;
+    position: absolute;
+    width: 850px;
+    height: 800px;
+    left: -10%;
+    top: -40%;
+    background: #7E46EF;
+}
+
+.circle2{
+    border-radius: 100%;
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    left: -10%;
+    top: 60%;
+    background: #7E46EF;
+}
+
+.circle3{
+    border-radius: 100%;
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: 55%;
+    top: -50%;
+    background: #7E46EF;
+}
+.circle4{
+    border-radius: 100%;
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    left: 70%;
+    top: 70%;
+    background: #7E46EF;
+}
+
 .title{
     color: #FFBD59;
     position: absolute;
     top: 25%;
-    left:30%;
+    left:28%;
     font-size: 100px;
 }
 
