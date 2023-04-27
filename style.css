@@ -2,10 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   body {
     background: #5B03CA;
+  }
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
   
   .hang-wrapper {
@@ -19,24 +26,51 @@
   
   .hang-info {
     height: 200px;
+    width: 100%;
     margin-bottom: 40px;
     background: #7E46EF;
   }
   
+  .hang-btn{
+    width:180px;
+    height: 45px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #FFBD59;
+    color: #7E46EF;
+  }
+  .hang-btn:hover{
+    background-color: #e7a746;
+    color: rgb(97, 42, 206);
+  }
+
   .hang-input {
     width: 60px;
     height: 60px;
     font-size: 50px;
     text-align: center;
+    background-color: #7E46EF;
+    border: 1px solid #7E46EF;
+    color: #FFBD59;
+  }
+
+  .hang-input:hover{
+    background-color: rgb(97, 42, 206);
+    border: 1px solid rgb(97, 42, 206);
   }
   
   .hang-gallow {
     background: #7E46EF;
     width: 100%;
+    border-radius: 10px;
+    color: #FFBD59;
+    padding: 20px;
   }
   
   .hang-gallow-box {
     width: 100%;
+    border-radius: 10px;
+    padding: 20px;
   }
   
   .hang-gallow-box {
@@ -44,7 +78,7 @@
     height: 100%;
     position: relative;
     bottom: 0;
-    background: #000;
+    background: #fffffF;
   }
   
   .hang-indicator {
