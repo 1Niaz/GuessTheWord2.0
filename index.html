@@ -1,68 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Word</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container screen">
+  <div class="hang">
+    <div class="container">
+      <div class="hang-wrapper">
+        
+        <div class="hang-aside">
+          <div class="hang-info">
 
-        <div class="background">
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+          </div>
 
-            <div class="circle1">
-            </div>
-            <div class="circle2">
-            </div>
-            <div class="circle3">
-            </div>
-            <div class="circle4">
-            </div>
+          <div class="hang-inputs">
+            <input type="text" class="hang-input">
+            <input type="text" class="hang-input">
+            <input type="text" class="hang-input">
+            <input type="text" class="hang-input">
+            <input type="text" class="hang-input">
+          </div>
+          
+          <button class="hang-btn">Подсказка</button>
         </div>
-
-        <div class="container game">
-
-            <div class="container start">
-                <h3 class="title">Guess The Word</h3>
-                <div class="btn-start">Start</div>
+        
+        <div class="hang-gallow">
+          <h3 class="hang-gallow-title">Виселица</h3>
+          <div class="hang-gallow-box">
+            
+            <div class="hang-gallow-gallow hang-indicator active">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-
-
-            <div class="container main">
-                <div class="error-letters"></div>
-                <div class="word">
-                    <div class="letter"></div>
-                    <div class="letter"></div>
-                    <div class="letter"></div>
-                    <div class="letter"></div>
-                    <div class="letter"></div>
-                </div>
-                <div class="help"></div>
-                <div class="gallow-start">
-
-                </div>
+            
+            <div class="hang-gallow-man">
+              <div class="hang-gallow-man-head hang-indicator active">
+                <span></span>
+              </div>
+              <div class="hang-gallow-man-body hang-indicator active">
+                <span></span>
+              </div>
+              <div class="hang-gallow-man-hands hang-indicator active">
+                <span></span>
+                <span></span>
+              </div>
+              <div class="hang-gallow-man-legs hang-indicator active">
+                <span></span>
+                <span></span>
+              </div>
             </div>
-
-            <div class="container restart">
-                <div class="gallow-end"></div>
-                <div class="result-text"></div>
-                <div class="restart"></div>
-            </div>
+            
+          </div>
         </div>
+        
+      </div>
     </div>
-
-
-    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
-    <script src="./main.js"></script>
+  </div>
+  <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+  <script src="./main.js"></script>
 </body>
 </html>
