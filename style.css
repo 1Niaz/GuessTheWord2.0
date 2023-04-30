@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    /*padding: 20px;*/
   }
   
   body {
@@ -10,9 +12,9 @@
   }
 
   .container {
-    max-width: 500px;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 30px;
   }
   
   .hang-wrapper {
@@ -38,10 +40,16 @@
     border-radius: 10px;
     background-color: #FFBD59;
     color: #7E46EF;
+    border: 2px solid #FFBD59;
   }
   .hang-btn:hover{
     background-color: #e7a746;
     color: rgb(97, 42, 206);
+    border: 2px solid #e7a746;
+  }
+
+  .hang-inputs{
+    margin-bottom: 10px;
   }
 
   .hang-input {
@@ -55,8 +63,8 @@
   }
 
   .hang-input:hover{
-    background-color: rgb(97, 42, 206);
-    border: 1px solid rgb(97, 42, 206);
+    background-color: rgb(106, 52, 214);
+    border: 1px solid rgb(106, 52, 214);
   }
   
   .hang-gallow {
@@ -73,6 +81,7 @@
     padding: 20px;
   }
   
+  /*
   .hang-gallow-box {
     width: 100%;
     height: 100%;
@@ -80,6 +89,7 @@
     bottom: 0;
     background: #fffffF;
   }
+  */
   
   .hang-indicator {
     display: none;
@@ -88,4 +98,97 @@
     display: inline-block;
   }
   
+
+  .hang-gallow-gallow {
+    background-color: #5B03CA;
+  }
+
+.stick1{
+  position: absolute;
+  top: 340px;
+  width: 250px;
+  height: 10px;
+  background-color: #5B03CA;
+}
+.stick2{
+  position: absolute;
+  top: 150px;
+  right: 350px;
+  width: 10px;
+  height: 200px;
+  background-color: #5B03CA;
+}
+.stick3{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 150px;
+  right: 280px;
+  width: 80px;
+  height: 10px;
+}
+.stick4{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 150px;
+  right: 280px;
+  height: 40px;
+  width: 10px;
+}
+
   
+  .hang-head {
+    position: relative;
+    left: 130px;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: #5B03CA;
+    border-radius: 50%;
+  }
+  
+.hang-body{
+  position: relative;
+  left: 105px;
+  top: 90px;
+  width: 10px;
+  height: 50px;
+  background-color: #5B03CA;
+}
+
+.hand-left{
+  position: relative;
+  left: 90px;
+  top: 70px;
+  width: 35px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: #5B03CA;
+}
+
+.hand-right{
+  position: relative;
+  left: 64px;
+  top: 62px;
+  width: 35px;
+  height: 10px;
+  transform: rotate(-45deg);
+  background-color: #5B03CA;
+}
+.leg-left{
+  position: relative;
+  left: 40px;
+  top: 115px;
+  width: 45px;
+  height: 10px;
+  transform: rotate(70deg);
+  background-color: #5B03CA;
+}
+.leg-right{
+  position: relative;
+  left: 28px;
+  top: 105px;
+  width: 45px;
+  height: 10px;
+  transform: rotate(-70deg);
+  background-color: #5B03CA;
+}
