@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lilita One', 'Lilita One MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 10px;
     /*padding: 20px;*/
   }
@@ -15,8 +15,58 @@
     max-width: 1250px;
     margin: 0 auto;
     padding: 30px;
+    display:none;
   }
-  
+
+.circle1{ /* Левая верхняя*/
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #7E46EF;
+  position: absolute;
+  top: -20%;
+  left: -10%;
+}
+
+.circle2{
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #7E46EF;
+  position: absolute;
+  top: -35%;
+  right: -10%;
+}
+
+
+.start-text h1{
+  color: #FFBD59;
+  text-align: center;
+  width: 700px;
+  height: 50px;
+  font-size: 7rem;
+  position: absolute;
+  top:30%;
+  left: 30%;
+}
+
+.start-btn{
+  color: #FFBD59;
+  background-color: #7E46EF;
+  position: absolute;
+  top:60%;
+  left: 43%;
+  font-size: 100px;
+  border: 2px solid #7E46EF;
+  padding: 10px;
+}
+
+.start-btn:hover{
+  background-color: rgb(111, 55, 223);
+  color: #e7a746;
+  border: 2px solid rgb(111, 55, 223);
+}
+
   .hang-wrapper {
     display: flex;
   }

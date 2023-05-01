@@ -1,28 +1,23 @@
 const inputs = document.querySelectorAll('.hang-input');
 const gallowEls = document.querySelectorAll('.hang-indicator');
 let help = document.querySelector('.hang-btn');
+let info = document.querySelector('hang-info');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
 
 const words = [
   {
-    word: 'apple',
-    help1: 'a',
-    help2: 'p',
-    help3: 'l'
+    word: 'adopt',
+    help: 'Приручить',
   },
   {
-    word: 'taste',
-    help1: 't',
-    help2: 'a',
-    help3: 's'
+    word: 'angry',
+    help: 'Злой',
   },
   {
-    word: 'anime',
-    help1: 'a',
-    help2: 'n',
-    help3: 'i'
+    word: 'actor',
+    help: 'Актёр',
   }
 ];
 
@@ -55,4 +50,23 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
+for (let i = 0; i < 1; i++){
+  help.addEventListener('click', function(){
+    gallowEls[i].classList.add('active');
+    alert(words[indexOfWord].help);
 
+  });
+}
+
+/*for (let i = 1; i < 2; i++){
+      help.addEventListener('click', function(){
+        gallowEls[i].classList.add('active');
+
+        for (let i = 2; i < 3; i++){
+          help.addEventListener('click', function(){
+            gallowEls[i].classList.add('active');
+            
+          });
+        }
+      });
+    }*/
