@@ -1,7 +1,10 @@
 const inputs = document.querySelectorAll('.hang-input');
 const gallowEls = document.querySelectorAll('.hang-indicator');
 let help = document.querySelector('.hang-btn');
-let info = document.querySelector('hang-info');
+let info = document.querySelector('.hang-info');
+let startBtn = document.querySelector('.start-btn');
+let start = document.querySelector('.start');
+let main = document.querySelector('.container');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -20,6 +23,12 @@ const words = [
     help: 'Актёр',
   }
 ];
+
+startBtn.addEventListener('click', function () {
+  main.style.display = 'flex';
+  start.style.display = 'none';
+
+});
 
 const indexOfWord = Math.round(Math.random() * (words.length - 1))
 

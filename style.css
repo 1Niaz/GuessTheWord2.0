@@ -19,23 +19,43 @@
   }
 
 .circle1{ /* Левая верхняя*/
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   border-radius: 50%;
   background-color: #7E46EF;
   position: absolute;
-  top: -20%;
+  top: -50%;
   left: -10%;
 }
 
-.circle2{
+.circle2{ /* Правая верхняя */
   width: 900px;
   height: 900px;
   border-radius: 50%;
   background-color: #7E46EF;
   position: absolute;
-  top: -35%;
-  right: -10%;
+  top: -40%;
+  right: -7%;
+}
+
+.circle3{ /* Левая нижняя */
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  background-color: #7E46EF;
+  position: absolute;
+  bottom: -60%;
+  left: -10%;
+}
+
+.circle4{ /* Правая нижняя */
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: #7E46EF;
+  position: absolute;
+  bottom: -70%;
+  right: -15%;
 }
 
 
@@ -58,7 +78,8 @@
   left: 43%;
   font-size: 100px;
   border: 2px solid #7E46EF;
-  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .start-btn:hover{
