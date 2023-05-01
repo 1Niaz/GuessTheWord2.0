@@ -113,7 +113,7 @@
 .stick2{
   position: absolute;
   top: 150px;
-  right: 350px;
+  right: 950px;
   width: 10px;
   height: 200px;
   background-color: #5B03CA;
@@ -122,7 +122,7 @@
   background-color: #5B03CA;
   position: absolute;
   top: 150px;
-  right: 280px;
+  right: 875px;
   width: 80px;
   height: 10px;
 }
@@ -130,7 +130,7 @@
   background-color: #5B03CA;
   position: absolute;
   top: 150px;
-  right: 280px;
+  right: 875px;
   height: 40px;
   width: 10px;
 }
@@ -138,7 +138,7 @@
   
   .hang-head {
     position: relative;
-    left: 130px;
+    left: 160px;
     top: 50px;
     width: 30px;
     height: 30px;
@@ -148,7 +148,7 @@
   
 .hang-body{
   position: relative;
-  left: 105px;
+  left: 135px;
   top: 90px;
   width: 10px;
   height: 50px;
@@ -157,7 +157,7 @@
 
 .hand-left{
   position: relative;
-  left: 90px;
+  left: 120px;
   top: 70px;
   width: 35px;
   height: 10px;
@@ -167,7 +167,7 @@
 
 .hand-right{
   position: relative;
-  left: 64px;
+  left: 94px;
   top: 62px;
   width: 35px;
   height: 10px;
@@ -176,7 +176,7 @@
 }
 .leg-left{
   position: relative;
-  left: 40px;
+  left: 70px;
   top: 115px;
   width: 45px;
   height: 10px;
@@ -185,7 +185,7 @@
 }
 .leg-right{
   position: relative;
-  left: 28px;
+  left: 58px;
   top: 105px;
   width: 45px;
   height: 10px;
