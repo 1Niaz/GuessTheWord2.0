@@ -1,266 +1,270 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Lilita One', 'Lilita One MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 10px;
-    /*padding: 20px;*/
-  }
-  
-  body {
-    background: #5B03CA;
-  }
-
-  .container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 30px;
-    display:none;
-  }
-
-.circle1{ /* Левая верхняя*/
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  background-color: #7E46EF;
-  position: absolute;
-  top: -50%;
-  left: -10%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lilita One', 'Lilita One MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 10px;
+  /*padding: 20px;*/
 }
 
-.circle2{ /* Правая верхняя */
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
-  background-color: #7E46EF;
-  position: absolute;
-  top: -40%;
-  right: -7%;
+body {
+  background: #5B03CA;
 }
 
-.circle3{ /* Левая нижняя */
-  width: 900px;
-  height: 900px;
-  border-radius: 50%;
-  background-color: #7E46EF;
-  position: absolute;
-  bottom: -60%;
-  left: -10%;
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px;
+  display:none;
 }
 
-.circle4{ /* Правая нижняя */
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  background-color: #7E46EF;
-  position: absolute;
-  bottom: -70%;
-  right: -15%;
+
+/*
+.background{
+position: relative;
 }
 
+.circle1{ 
+width: 900px;
+height: 900px;
+border-radius: 50%;
+background-color: #7E46EF;
+position: absolute;
+left: -10%;
+top: 20%;
+}
+
+.circle2{ 
+width: 900px;
+height: 900px;
+border-radius: 50%;
+background-color: #7E46EF;
+position: absolute;
+
+}
+
+.circle3{ 
+width: 900px;
+height: 900px;
+border-radius: 50%;
+background-color: #7E46EF;
+position: absolute;
+
+}
+
+.circle4{ 
+width: 1000px;
+height: 1000px;
+border-radius: 50%;
+background-color: #7E46EF;
+position: absolute;
+
+}
+*/
 
 .start-text h1{
-  color: #FFBD59;
-  text-align: center;
-  width: 700px;
-  height: 50px;
-  font-size: 7rem;
-  position: absolute;
-  top:30%;
-  left: 30%;
+color: #FFBD59;
+text-align: center;
+width: 700px;
+height: 50px;
+font-size: 7rem;
+position: absolute;
+top:30%;
+left: 30%;
 }
 
 .start-btn{
-  color: #FFBD59;
-  background-color: #7E46EF;
-  position: absolute;
-  top:60%;
-  left: 43%;
-  font-size: 100px;
-  border: 2px solid #7E46EF;
-  padding-right: 20px;
-  padding-left: 20px;
+color: #FFBD59;
+background-color: #7E46EF;
+position: absolute;
+top:60%;
+left: 43%;
+font-size: 100px;
+border: 2px solid #7E46EF;
+padding-right: 20px;
+padding-left: 20px;
 }
 
 .start-btn:hover{
-  background-color: rgb(111, 55, 223);
-  color: #e7a746;
-  border: 2px solid rgb(111, 55, 223);
+background-color: rgb(111, 55, 223);
+color: #e7a746;
+border: 2px solid rgb(111, 55, 223);
 }
 
-  .hang-wrapper {
-    display: flex;
-  }
-  
-  .hang-aside {
-    min-width: 450px;
-    margin-right: 10px;
-  }
-  
-  .hang-info {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 40px;
-    background: #7E46EF;
-  }
-  
-  .hang-btn{
-    width:180px;
-    height: 45px;
-    font-size: 25px;
-    border-radius: 10px;
-    background-color: #FFBD59;
-    color: #7E46EF;
-    border: 2px solid #FFBD59;
-  }
-  .hang-btn:hover{
-    background-color: #e7a746;
-    color: rgb(97, 42, 206);
-    border: 2px solid #e7a746;
-  }
+.hang-wrapper {
+  display: flex;
+}
 
-  .hang-inputs{
-    margin-bottom: 10px;
-  }
+.hang-aside {
+  min-width: 450px;
+  margin-right: 10px;
+}
 
-  .hang-input {
-    width: 60px;
-    height: 60px;
-    font-size: 50px;
-    text-align: center;
-    background-color: #7E46EF;
-    border: 1px solid #7E46EF;
-    color: #FFBD59;
-  }
+.hang-info {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 40px;
+  background: #7E46EF;
+}
 
-  .hang-input:hover{
-    background-color: rgb(106, 52, 214);
-    border: 1px solid rgb(106, 52, 214);
-  }
-  
-  .hang-gallow {
-    background: #7E46EF;
-    width: 100%;
-    border-radius: 10px;
-    color: #FFBD59;
-    padding: 20px;
-  }
-  
-  .hang-gallow-box {
-    width: 100%;
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  /*
-  .hang-gallow-box {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    bottom: 0;
-    background: #fffffF;
-  }
-  */
-  
-  .hang-indicator {
-    display: none;
-  }
-  .hang-indicator.active {
-    display: inline-block;
-  }
-  
+.hang-btn{
+  width:180px;
+  height: 45px;
+  font-size: 25px;
+  border-radius: 10px;
+  background-color: #FFBD59;
+  color: #7E46EF;
+  border: 2px solid #FFBD59;
+}
+.hang-btn:hover{
+  background-color: #e7a746;
+  color: rgb(97, 42, 206);
+  border: 2px solid #e7a746;
+}
 
-  .hang-gallow-gallow {
-    background-color: #5B03CA;
-  }
+.hang-inputs{
+  margin-bottom: 10px;
+}
+
+.hang-input {
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  background-color: #7E46EF;
+  border: 1px solid #7E46EF;
+  color: #FFBD59;
+}
+
+.hang-input:hover{
+  background-color: rgb(106, 52, 214);
+  border: 1px solid rgb(106, 52, 214);
+}
+
+.hang-gallow {
+  background: #7E46EF;
+  width: 100%;
+  border-radius: 10px;
+  color: #FFBD59;
+  padding: 20px;
+}
+
+
+/*
+.hang-gallow-box {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.hang-gallow-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0;
+  background: #fffffF;
+}
+*/
+
+.hang-indicator {
+  display: none;
+}
+.hang-indicator.active {
+  display: inline-block;
+}
+
+
+.hang-gallow-gallow {
+  background-color: #5B03CA;
+}
 
 .stick1{
-  position: absolute;
-  top: 340px;
-  width: 250px;
-  height: 10px;
-  background-color: #5B03CA;
+position: absolute;
+top: 340px;
+width: 250px;
+height: 10px;
+background-color: #5B03CA;
 }
 .stick2{
-  position: absolute;
-  top: 150px;
-  right: 950px;
-  width: 10px;
-  height: 200px;
-  background-color: #5B03CA;
+position: absolute;
+top: 150px;
+right: 950px;
+width: 10px;
+height: 200px;
+background-color: #5B03CA;
 }
 .stick3{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 150px;
-  right: 875px;
-  width: 80px;
-  height: 10px;
+background-color: #5B03CA;
+position: absolute;
+top: 150px;
+right: 875px;
+width: 80px;
+height: 10px;
 }
 .stick4{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 150px;
-  right: 875px;
-  height: 40px;
-  width: 10px;
+background-color: #5B03CA;
+position: absolute;
+top: 150px;
+right: 875px;
+height: 40px;
+width: 10px;
 }
 
-  
-  .hang-head {
-    position: relative;
-    left: 160px;
-    top: 50px;
-    width: 30px;
-    height: 30px;
-    background-color: #5B03CA;
-    border-radius: 50%;
-  }
-  
-.hang-body{
+
+.hang-head {
   position: relative;
-  left: 135px;
-  top: 90px;
-  width: 10px;
-  height: 50px;
+  left: 160px;
+  top: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #5B03CA;
+  border-radius: 50%;
+}
+
+.hang-body{
+position: relative;
+left: 135px;
+top: 90px;
+width: 10px;
+height: 50px;
+background-color: #5B03CA;
 }
 
 .hand-left{
-  position: relative;
-  left: 120px;
-  top: 70px;
-  width: 35px;
-  height: 10px;
-  transform: rotate(45deg);
-  background-color: #5B03CA;
+position: relative;
+left: 120px;
+top: 70px;
+width: 35px;
+height: 10px;
+transform: rotate(45deg);
+background-color: #5B03CA;
 }
 
 .hand-right{
-  position: relative;
-  left: 94px;
-  top: 62px;
-  width: 35px;
-  height: 10px;
-  transform: rotate(-45deg);
-  background-color: #5B03CA;
+position: relative;
+left: 94px;
+top: 62px;
+width: 35px;
+height: 10px;
+transform: rotate(-45deg);
+background-color: #5B03CA;
 }
 .leg-left{
-  position: relative;
-  left: 70px;
-  top: 115px;
-  width: 45px;
-  height: 10px;
-  transform: rotate(70deg);
-  background-color: #5B03CA;
+position: relative;
+left: 70px;
+top: 115px;
+width: 45px;
+height: 10px;
+transform: rotate(70deg);
+background-color: #5B03CA;
 }
 .leg-right{
-  position: relative;
-  left: 58px;
-  top: 105px;
-  width: 45px;
-  height: 10px;
-  transform: rotate(-70deg);
-  background-color: #5B03CA;
+position: relative;
+left: 58px;
+top: 105px;
+width: 45px;
+height: 10px;
+transform: rotate(-70deg);
+background-color: #5B03CA;
 }
 
