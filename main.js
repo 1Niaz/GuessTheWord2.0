@@ -1,27 +1,28 @@
 const inputs = document.querySelectorAll('.hang-input');
 const gallowEls = document.querySelectorAll('.hang-indicator');
+let help = document.querySelector('.hang-btn');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
 
 const words = [
   {
-    word: 'банка',
-    help1: '',
-    help2: '',
-    help3: ''
+    word: 'apple',
+    help1: 'a',
+    help2: 'p',
+    help3: 'l'
   },
   {
-    word: 'баqка',
-    help1: '',
-    help2: '',
-    help3: ''
+    word: 'taste',
+    help1: 't',
+    help2: 'a',
+    help3: 's'
   },
   {
-    word: 'баfка',
-    help1: '',
-    help2: '',
-    help3: ''
+    word: 'anime',
+    help1: 'a',
+    help2: 'n',
+    help3: 'i'
   }
 ];
 
@@ -35,7 +36,7 @@ for (let i = 0; i < inputs.length; i++) {
           
           
           // если не угадали букву
-          inputs[i].style.backgroundColor = "#ff0000";
+          inputs[i].style.backgroundColor = "#be0808";
           
           gallowEls[indexGallowEl].classList.add('active');
           indexGallowEl++;
@@ -47,9 +48,11 @@ for (let i = 0; i < inputs.length; i++) {
           
         } else {
           // правильно введенная буква
-          inputs[i].style.backgroundColor = "#00ff00";
+          inputs[i].style.backgroundColor = "#12a112";
         }
         
       }
     });
 }
+
+
