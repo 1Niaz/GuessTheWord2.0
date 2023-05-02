@@ -7,6 +7,8 @@ let start = document.querySelector('.start');
 let main = document.querySelector('.container');
 let restartLose = document.querySelector('.restart-lose');
 let endLose = document.querySelector('.end-lose');
+let restartWin = document.querySelector('.restart-win');
+let endWin = document.querySelector('.end-win');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -62,8 +64,9 @@ for (let i = 0; i < inputs.length; i++) {
         } else {
           // правильно введенная буква
           inputs[i].style.backgroundColor = "#12a112";
-        }
 
+        }
+        
       }
     });
 }
@@ -74,4 +77,8 @@ restartLose.addEventListener('click', function () {
   indexGallowEl = 0;
 });
 
-
+restartWin.addEventListener('click', function () {
+  main.style.display = 'flex';
+  endWin.style.display = 'none';
+  indexGallowEl = 0;
+});

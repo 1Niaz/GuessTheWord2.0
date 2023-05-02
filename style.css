@@ -349,3 +349,136 @@ background-color: #5B03CA;
 .end-lose{
   display: none;
 }
+
+.gallowwin{
+  color: #FFBD59;
+  text-align: center;
+  background-color: #7E46EF;
+  width: 500px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.winstick1{
+  position: absolute;
+  top: 38%;
+  left: 3%;
+  width: 300px;
+  height: 10px;
+  background-color: #5B03CA;
+}
+
+.winstick2{
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  width: 10px;
+  height: 250px;
+  background-color: #5B03CA;
+}
+
+.winstick3{
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  width: 100px;
+  height: 10px;
+  background-color: #5B03CA;
+}
+
+.winstick4{
+  position: absolute;
+  top: 13%;
+  left: 11.8%;
+  width: 10px;
+  height: 50px;
+  background-color: #5B03CA;
+}
+
+.win-text{
+  font-size: 2.5rem;
+}
+
+.restart-win{
+  background-color: #FFBD59;
+  border: 2px solid #FFBD59;
+  color: #5B03CA;
+  padding: 20px;
+  width: 250px ;
+  height: 100px;
+  font-size: 2.7rem;
+  position: absolute;
+  top: 33.3%;
+  left: 30%;
+}
+
+.restart-win:hover{
+  background-color: #e7a746;
+  border: 2px solid #e7a746;
+  color: rgb(106, 52, 214);
+}
+
+.winleftleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 33%;
+  left: 12.2%;
+  width: 10px;
+  height: 50px;
+  transform: rotate(-20deg);
+}
+
+.winrightleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 33%;
+  left: 11.35%;
+  width: 10px;
+  height: 50px;
+  transform: rotate(20deg);
+}
+
+.winrighthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 26%;
+  left: 11%;
+  width: 10px;
+  height: 40px;
+  transform: rotate(135deg);
+}
+
+.winlefthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 26%;
+  left: 12.5%;
+  width: 10px;
+  height: 40px;
+  transform: rotate(-135deg);
+}
+
+.winbody{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 27%;
+  left: 11.75%;
+  width: 10px;
+  height: 70px;
+}
+
+.winhead{
+  background-color: #5B03CA;
+  position: absolute;
+  left: 11%;
+  top: 24.5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.end-win{
+  display: none;
+}
