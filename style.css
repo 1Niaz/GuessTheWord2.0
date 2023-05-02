@@ -15,8 +15,10 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px;
-  display:none;
+  display: none;;
 }
+
+
 .background img{
   max-width: 100%;
   max-height: 100%;
@@ -142,28 +144,13 @@ border: 2px solid rgb(111, 55, 223);
 
 .hang-gallow {
   background: #7E46EF;
-  width: 100%;
+  width: 700px;
   border-radius: 10px;
   color: #FFBD59;
   padding: 20px;
+  position: static;
 }
 
-
-/*
-.hang-gallow-box {
-  width: 100%;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.hang-gallow-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: 0;
-  background: #fffffF;
-}
-*/
 
 .hang-indicator {
   display: none;
@@ -212,7 +199,7 @@ width: 10px;
 
 .hang-head {
   position: relative;
-  left: 160px;
+  left: 180px;
   top: 50px;
   width: 30px;
   height: 30px;
@@ -222,7 +209,7 @@ width: 10px;
 
 .hang-body{
 position: relative;
-left: 135px;
+left: 155px;
 top: 90px;
 width: 10px;
 height: 50px;
@@ -231,7 +218,7 @@ background-color: #5B03CA;
 
 .hand-left{
 position: relative;
-left: 120px;
+left: 140px;
 top: 70px;
 width: 35px;
 height: 10px;
@@ -241,7 +228,7 @@ background-color: #5B03CA;
 
 .hand-right{
 position: relative;
-left: 94px;
+left: 114px;
 top: 62px;
 width: 35px;
 height: 10px;
@@ -250,7 +237,7 @@ background-color: #5B03CA;
 }
 .leg-left{
 position: relative;
-left: 70px;
+left: 90px;
 top: 115px;
 width: 45px;
 height: 10px;
@@ -259,7 +246,7 @@ background-color: #5B03CA;
 }
 .leg-right{
 position: relative;
-left: 58px;
+left: 78px;
 top: 105px;
 width: 45px;
 height: 10px;
