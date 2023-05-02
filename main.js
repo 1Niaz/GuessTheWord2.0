@@ -5,6 +5,8 @@ let info = document.querySelector('.hang-info');
 let startBtn = document.querySelector('.start-btn');
 let start = document.querySelector('.start');
 let main = document.querySelector('.container');
+let restartLose = document.querySelector('.restart-lose');
+let endLose = document.querySelector('.end-lose');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -51,7 +53,9 @@ for (let i = 0; i < inputs.length; i++) {
           indexGallowEl++;
 
           if (indexGallowEl >= 5) {
-            console.log('You lose!')
+            console.log('You lose!');
+            endLose.style.display = 'flex';
+            main.style.display = 'none';
             // перевод на следующий экран
           }
 
@@ -63,3 +67,11 @@ for (let i = 0; i < inputs.length; i++) {
       }
     });
 }
+
+restartLose.addEventListener('click', function () {
+  main.style.display = 'flex';
+  endLose.style.display = 'none';
+
+});
+
+

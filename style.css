@@ -15,7 +15,7 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px;
-  display: none;;
+  display: none;
 }
 
 
@@ -23,45 +23,6 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-
-/*
-.circle1{ 
-width: 900px;
-height: 900px;
-border-radius: 50%;
-background-color: #7E46EF;
-position: absolute;
-left: -10%;
-top: 20%;
-}
-
-.circle2{ 
-width: 900px;
-height: 900px;
-border-radius: 50%;
-background-color: #7E46EF;
-position: absolute;
-
-}
-
-.circle3{ 
-width: 900px;
-height: 900px;
-border-radius: 50%;
-background-color: #7E46EF;
-position: absolute;
-
-}
-
-.circle4{ 
-width: 1000px;
-height: 1000px;
-border-radius: 50%;
-background-color: #7E46EF;
-position: absolute;
-
-}
-*/
 
 .start-text h1{
 color: #FFBD59;
@@ -254,3 +215,137 @@ transform: rotate(-70deg);
 background-color: #5B03CA;
 }
 
+
+.gallowlose{
+  color: #FFBD59;
+  text-align: center;
+  background-color: #7E46EF;
+  width: 500px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+.losestick1{
+  position: absolute;
+  top: 38%;
+  left: 3%;
+  width: 300px;
+  height: 10px;
+  background-color: #5B03CA;
+}
+
+.losestick2{
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  width: 10px;
+  height: 250px;
+  background-color: #5B03CA;
+}
+
+.losestick3{
+  position: absolute;
+  top: 13%;
+  left: 7%;
+  width: 100px;
+  height: 10px;
+  background-color: #5B03CA;
+}
+
+.losestick4{
+  position: absolute;
+  top: 13%;
+  left: 11.8%;
+  width: 10px;
+  height: 50px;
+  background-color: #5B03CA;
+}
+
+
+.losehead{
+  background-color: #5B03CA;
+  position: absolute;
+  left: 11%;
+  top: 17.5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.losebody{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 20%;
+  left: 11.75%;
+  width: 10px;
+  height: 70px;
+}
+
+.loselefthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 21%;
+  left: 12.5%;
+  width: 10px;
+  height: 40px;
+  transform: rotate(-45deg);
+}
+
+.loserighthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 21%;
+  left: 11%;
+  width: 10px;
+  height: 40px;
+  transform: rotate(45deg);
+}
+
+.loseleftleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 26%;
+  left: 11.35%;
+  width: 10px;
+  height: 50px;
+  transform: rotate(20deg);
+}
+
+.loserightleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 26%;
+  left: 12.2%;
+  width: 10px;
+  height: 50px;
+  transform: rotate(-20deg);
+}
+
+.lose-text{
+  font-size: 2.5rem;
+}
+
+.restart-lose{
+  background-color: #FFBD59;
+  border: 2px solid #FFBD59;
+  color: #5B03CA;
+  padding: 20px;
+  width: 250px ;
+  height: 100px;
+  font-size: 2.7rem;
+  position: absolute;
+  top: 33.3%;
+  left: 30%;
+}
+
+.restart-lose:hover{
+  background-color: #e7a746;
+  border: 2px solid #e7a746;
+  color: rgb(106, 52, 214);
+}
+
+.end-lose{
+  display: none;
+}
