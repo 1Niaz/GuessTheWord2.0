@@ -71,7 +71,7 @@ for (let i = 0; i < inputs.length; i++) {
 restartLose.addEventListener('click', function () {
   main.style.display = 'flex';
   endLose.style.display = 'none';
-
+  indexGallowEl = 0;
 });
 
 
