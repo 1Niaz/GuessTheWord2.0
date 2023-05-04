@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll('.hang-input');
+const inputLine = document.querySelector('.hang-inputs');
 const gallowEls = document.querySelectorAll('.hang-indicator');
 let help = document.querySelector('.hang-btn');
 let info = document.querySelector('.hang-info');
@@ -9,6 +10,7 @@ let restartLose = document.querySelector('.restart-lose');
 let endLose = document.querySelector('.end-lose');
 let restartWin = document.querySelector('.restart-win');
 let endWin = document.querySelector('.end-win');
+let clearInput = inputs.parentNode;
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -74,11 +76,9 @@ for (let i = 0; i < inputs.length; i++) {
 restartLose.addEventListener('click', function () {
   main.style.display = 'flex';
   endLose.style.display = 'none';
-  indexGallowEl = 0;
 });
 
 restartWin.addEventListener('click', function () {
   main.style.display = 'flex';
   endWin.style.display = 'none';
-  indexGallowEl = 0;
 });

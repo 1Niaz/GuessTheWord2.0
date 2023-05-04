@@ -40,7 +40,7 @@ color: #FFBD59;
 background-color: #7E46EF;
 position: absolute;
 top:60%;
-left: 43%;
+left: 40%;
 font-size: 100px;
 border: 2px solid #7E46EF;
 padding-right: 20px;
@@ -482,3 +482,4 @@ background-color: #5B03CA;
 .end-win{
   display: none;
 }
+
