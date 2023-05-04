@@ -10,7 +10,6 @@ let restartLose = document.querySelector('.restart-lose');
 let endLose = document.querySelector('.end-lose');
 let restartWin = document.querySelector('.restart-win');
 let endWin = document.querySelector('.end-win');
-let clearInput = inputs.parentNode;
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -73,10 +72,20 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
-restartLose.addEventListener('click', function () {
-  main.style.display = 'flex';
-  endLose.style.display = 'none';
-});
+for(let i = 0; i <= indexGallowEl; i++){
+  restartLose.addEventListener('click', function () {
+    gallowEls[i].classList.remove('active');
+    main.style.display = 'flex';
+    endLose.style.display = 'none';
+
+  });
+
+  indexGallowEl = 0;
+  for (let i =0; i < inputs.length; i++){
+    inputs[i].value = '';
+  }
+}
+
 
 restartWin.addEventListener('click', function () {
   main.style.display = 'flex';
