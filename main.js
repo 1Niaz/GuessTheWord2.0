@@ -73,6 +73,7 @@ for (let i = 0; i < inputs.length; i++) {
                 if(inputs[3].value == words[indexOfWord].word[3]){
                   inputs[3].style.backgroundColor = "#12a112";
                   if(inputs[4].value == words[indexOfWord].word[4]){
+                    console.log('You win!');
                     inputs[4].style.backgroundColor = "#12a112";
                     endWin.style.display = 'flex';
                     main.style.display = 'none';
