@@ -64,7 +64,27 @@ for (let i = 0; i < inputs.length; i++) {
 
         } else {
           // правильно введенная буква
-          inputs[i].style.backgroundColor = "#12a112";
+          if(inputs[0].value == words[indexOfWord].word[0]){
+            inputs[0].style.backgroundColor = "#12a112";
+            if(inputs[1].value == words[indexOfWord].word[1]){
+              inputs[1].style.backgroundColor = "#12a112";
+              if(inputs[2].value == words[indexOfWord].word[2]){
+                inputs[2].style.backgroundColor = "#12a112";
+                if(inputs[3].value == words[indexOfWord].word[3]){
+                  inputs[3].style.backgroundColor = "#12a112";
+                  if(inputs[4].value == words[indexOfWord].word[4]){
+                    inputs[4].style.backgroundColor = "#12a112";
+                    endWin.style.display = 'flex';
+                    main.style.display = 'none';
+                  }
+                }
+              }
+            }
+          } else {
+            endLose.style.display = 'flex';
+            main.style.display = 'none';
+          }
+          // inputs[i].style.backgroundColor = "#12a112";
 
         }
         
