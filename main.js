@@ -94,17 +94,18 @@ for (let i = 0; i < inputs.length; i++) {
 
 for(let i = 0; i <= indexGallowEl; i++){
   restartLose.addEventListener('click', function () {
-    gallowEls[i].classList.remove('active');
     main.style.display = 'flex';
     endLose.style.display = 'none';
+    gallowEls[i].classList.remove('active');
 
   });
-
-  indexGallowEl = 0;
-  for (let i =0; i < inputs.length; i++){
-    inputs[i].value = '';
-  }
 }
+indexGallowEl = 0;
+
+for (let i = 0; i < inputs.length; i++){
+    inputs[i].value = '';
+}
+
 
 
 restartWin.addEventListener('click', function () {
