@@ -122,6 +122,8 @@ border: 2px solid rgb(111, 55, 223);
   width: 100%;
   margin-bottom: 40px;
   background: #7E46EF;
+  color: #FFBD59;
+  font-size: 40px;
 }
 
 .hang-btn{
@@ -138,6 +140,26 @@ border: 2px solid rgb(111, 55, 223);
   color: rgb(97, 42, 206);
   border: 2px solid #e7a746;
 }
+
+.incorrect-inputs{
+  position:absolute;
+  top: 5%;
+  left: 20%;
+  display: flex;
+  flex-direction: row;
+}
+
+.incorrect-input{
+  background-color: #7E46EF;
+  border: 2px solid #7E46EF;
+  color: #FFBD59;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+  text-align: center;
+  color: #FFBD59;
+}
+
 
 .hang-inputs{
   margin-bottom: 10px;

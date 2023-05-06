@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('.hang-input');
 const inputLine = document.querySelector('.hang-inputs');
 const gallowEls = document.querySelectorAll('.hang-indicator');
+let incorrectInput = document.querySelectorAll('.incorrect-input');
 let help = document.querySelector('.hang-btn');
 let info = document.querySelector('.hang-info');
 let startBtn = document.querySelector('.start-btn');
@@ -47,13 +48,16 @@ for (let i = 0; i < inputs.length; i++) {
       if (inputs[i].value.length == 1) {
 
         if (inputs[i].value != words[indexOfWord].word[i]) {
-
-
           // если не угадали букву
+
+          incorrectInput[i].value = inputs[i].value;
           inputs[i].style.backgroundColor = "#be0808";
+          // info.innerHTML = inputs[i];
 
           gallowEls[indexGallowEl].classList.add('active');
           indexGallowEl++;
+
+          
 
           if (indexGallowEl >= 5) {
             console.log('You lose!');
@@ -94,20 +98,21 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 for(let i = 0; i <= indexGallowEl; i++){
-  restartLose.addEventListener('click', function () {
-    main.style.display = 'flex';
-    endLose.style.display = 'none';
     gallowEls[i].classList.remove('active');
 
-  });
 }
+
 indexGallowEl = 0;
 
 for (let i = 0; i < inputs.length; i++){
     inputs[i].value = '';
+    incorrectInput[i].value = '';
 }
 
-
+restartLose.addEventListener('click', function () {
+  main.style.display = 'flex';
+  endLose.style.display = 'none';
+});
 
 restartWin.addEventListener('click', function () {
   main.style.display = 'flex';
