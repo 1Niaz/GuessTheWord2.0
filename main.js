@@ -52,7 +52,6 @@ for (let i = 0; i < inputs.length; i++) {
 
           incorrectInput[i].value = inputs[i].value;
           inputs[i].style.backgroundColor = "#be0808";
-          // info.innerHTML = inputs[i];
 
           gallowEls[indexGallowEl].classList.add('active');
           indexGallowEl++;
@@ -98,21 +97,19 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 for(let i = 0; i <= indexGallowEl; i++){
+  restartLose.addEventListener('click', function () {
+    main.style.display = 'flex';
+    endLose.style.display = 'none';
     gallowEls[i].classList.remove('active');
-
+  });
 }
-
-indexGallowEl = 0;
 
 for (let i = 0; i < inputs.length; i++){
     inputs[i].value = '';
     incorrectInput[i].value = '';
 }
 
-restartLose.addEventListener('click', function () {
-  main.style.display = 'flex';
-  endLose.style.display = 'none';
-});
+indexGallowEl = 0;
 
 restartWin.addEventListener('click', function () {
   main.style.display = 'flex';
