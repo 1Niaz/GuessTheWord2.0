@@ -27,7 +27,35 @@ const words = [
   {
     word: 'actor',
     help: 'Актёр',
-  }
+  },
+  {
+    word:'human',
+    help:'Человек',
+  },
+  {
+    word:'guess',
+    help:'Угадать',
+  },
+  {
+    word:'laugh',
+    help:'Смех',
+  },
+  {
+    word:'touch',
+    help:'Трогать',
+  },
+  {
+    word:'light',
+    help:'Свет',
+  },
+  {
+    word:'smell',
+    help:'Запах',
+  },
+  {
+    word:'steal',
+    help:'Украсть',
+  },
 ];
 
 startBtn.addEventListener('click', function () {
@@ -41,7 +69,7 @@ help.addEventListener('click', function(){
   gallowEls[indexGallowEl].classList.add('active');
   indexGallowEl++;
 });
-const indexOfWord = Math.round(Math.random() * (words.length - 1))
+const indexOfWord = Math.round(Math.random() * (words.length - 1));
 
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('input', function () {
