@@ -124,22 +124,41 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
-for(let i = 0; i <= indexGallowEl; i++){
-  restartLose.addEventListener('click', function () {
-    main.style.display = 'flex';
-    endLose.style.display = 'none';
+// for(let i = 0; i <= indexGallowEl; i++){
+//   restartLose.addEventListener('click', function () {
+//     main.style.display = 'flex';
+//     endLose.style.display = 'none';
+//     gallowEls[i].classList.remove('active');
+//   });
+// }
+
+// for (let i = 0; i < inputs.length; i++){
+//     inputs[i].value = '';
+//     incorrectInput[i].value = '';
+// }
+
+// indexGallowEl = 0;
+
+for (let i = 0; i < 5; i++){
+  restartLose.addEventListener('click', function(){
     gallowEls[i].classList.remove('active');
+    inputs[i].style.backgroundColor = "#7E46EF";
+    inputs[i].value = '';
+    incorrectInput[i].value = inputs[i].value;
+    endLose.style.display = 'none';
+    main.style.display = 'flex';
+    indexOfWord = Math.round(Math.random() * (words.length - 1));
   });
 }
 
-for (let i = 0; i < inputs.length; i++){
+for (let i = 0; i < 5; i++){
+  restartWin.addEventListener('click', function(){
+    gallowEls[i].classList.remove('active');
+    inputs[i].style.backgroundColor = "#7E46EF";
     inputs[i].value = '';
-    incorrectInput[i].value = '';
+    incorrectInput[i].value = inputs[i].value;
+    endWin.style.display = 'none';
+    main.style.display = 'flex';
+    indexOfWord = Math.round(Math.random() * (words.length - 1));
+  });
 }
-
-indexGallowEl = 0;
-
-restartWin.addEventListener('click', function () {
-  main.style.display = 'flex';
-  endWin.style.display = 'none';
-});
