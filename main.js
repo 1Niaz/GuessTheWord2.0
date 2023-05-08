@@ -147,7 +147,6 @@ for (let i = 0; i < 5; i++){
     incorrectInput[i].value = inputs[i].value;
     endLose.style.display = 'none';
     main.style.display = 'flex';
-    indexOfWord = Math.round(Math.random() * (words.length - 1));
   });
 }
 
@@ -159,6 +158,5 @@ for (let i = 0; i < 5; i++){
     incorrectInput[i].value = inputs[i].value;
     endWin.style.display = 'none';
     main.style.display = 'flex';
-    indexOfWord = Math.round(Math.random() * (words.length - 1));
   });
 }
