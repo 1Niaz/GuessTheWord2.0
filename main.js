@@ -139,7 +139,7 @@ for (let i = 0; i < inputs.length; i++) {
 
 // indexGallowEl = 0;
 
-for (let i = 0; i < 5; i++){
+for (let i = 0; i < inputs.length; i++){
   restartLose.addEventListener('click', function(){
     gallowEls[i].classList.remove('active');
     inputs[i].style.backgroundColor = "#7E46EF";
@@ -150,7 +150,7 @@ for (let i = 0; i < 5; i++){
   });
 }
 
-for (let i = 0; i < 5; i++){
+for (let i = 0; i < inputs.length; i++){
   restartWin.addEventListener('click', function(){
     gallowEls[i].classList.remove('active');
     inputs[i].style.backgroundColor = "#7E46EF";
@@ -160,3 +160,5 @@ for (let i = 0; i < 5; i++){
     main.style.display = 'flex';
   });
 }
+
+indexGallowEl = 0;
