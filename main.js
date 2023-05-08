@@ -155,7 +155,7 @@ restartLose.addEventListener('click', function(){
      inputs[i].value = '';
      incorrectInput[i].value = inputs[i].value;
   }
-  for (let i = 0; i <= indexGallowEl; i++){
+  for (let i = 0; i < indexGallowEl; i++){
     gallowEls[i].classList.remove('active');
   }
 });
@@ -168,7 +168,7 @@ restartWin.addEventListener('click', function(){
      inputs[i].value = '';
      incorrectInput[i].value = inputs[i].value;
   }
-  for (let i = 0; i <= indexGallowEl; i++){
+  for (let i = 0; i < indexGallowEl; i++){
     gallowEls[i].classList.remove('active');
   }
 });
