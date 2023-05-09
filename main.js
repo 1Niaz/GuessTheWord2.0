@@ -124,28 +124,6 @@ for (let i = 0; i < inputs.length; i++) {
     });
 }
 
-// for (let i = 0; i < inputs.length; i++){
-//   restartLose.addEventListener('click', function(){
-//     gallowEls[i].classList.remove('active');
-//     inputs[i].style.backgroundColor = "#7E46EF";
-//     inputs[i].value = '';
-//     incorrectInput[i].value = inputs[i].value;
-//     endLose.style.display = 'none';
-//     main.style.display = 'flex';
-//   });
-// }
-
-// for (let i = 0; i < inputs.length; i++){
-//   restartWin.addEventListener('click', function(){
-//     gallowEls[i].classList.remove('active');
-//     inputs[i].style.backgroundColor = "#7E46EF";
-//     inputs[i].value = '';
-//     incorrectInput[i].value = inputs[i].value;
-//     endWin.style.display = 'none';
-//     main.style.display = 'flex';
-//   });
-// }
-// indexGallowEl = 0;
 
 restartLose.addEventListener('click', function(){
   main.style.display = 'flex';
