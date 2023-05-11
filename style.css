@@ -19,28 +19,33 @@ body {
 }
 
 
-.background img{
-  max-width: 100%;
-  max-height: 100%;
+.start {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.start-text h1{
-color: #FFBD59;
-text-align: center;
-width: 700px;
-height: 50px;
-font-size: 7rem;
-position: absolute;
-top:30%;
-left: 30%;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./images/newBG.jpg") 50% / cover no-repeat;
+  z-index: -1;
+}
+
+.start-title {
+  color: #FFBD59;
+  font-size: 7rem;
 }
 
 .start-btn{
   color: #FFBD59;
   background-color: #7E46EF;
-  position: absolute;
-  top:60%;
-  left: 40%;
   font-size: 100px;
   border: none;
   padding-right: 20px;
@@ -51,9 +56,6 @@ left: 30%;
 .start-btn span {
   background: #7E46EF;
   display: block;
-  position: absolute;
-  width: 300px;
-  height: 120px;
   margin:0;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -186,7 +188,7 @@ border: 2px solid rgb(111, 55, 223);
   border-radius: 10px;
   color: #FFBD59;
   padding: 20px;
-  position: static;
+  position: relative;
 }
 
 
@@ -203,35 +205,35 @@ border: 2px solid rgb(111, 55, 223);
 }
 
 .stick1{
-position: absolute;
-top: 340px;
-width: 250px;
-height: 10px;
-background-color: #5B03CA;
+  position: absolute;
+  top: 340px;
+  width: 250px;
+  height: 10px;
+  background-color: #5B03CA;
 }
 .stick2{
-position: absolute;
-top: 150px;
-right: 950px;
-width: 10px;
-height: 200px;
-background-color: #5B03CA;
+  position: absolute;
+  top: 150px;
+  right: 950px;
+  width: 10px;
+  height: 200px;
+  background-color: #5B03CA;
 }
 .stick3{
-background-color: #5B03CA;
-position: absolute;
-top: 150px;
-right: 875px;
-width: 80px;
-height: 10px;
+  background-color: #5B03CA;
+  position: absolute;
+  top: 150px;
+  right: 875px;
+  width: 80px;
+  height: 10px;
 }
 .stick4{
-background-color: #5B03CA;
-position: absolute;
-top: 150px;
-right: 875px;
-height: 40px;
-width: 10px;
+  background-color: #5B03CA;
+  position: absolute;
+  top: 150px;
+  right: 875px;
+  height: 40px;
+  width: 10px;
 }
 
 
@@ -246,12 +248,12 @@ width: 10px;
 }
 
 .hang-body{
-position: relative;
-left: 155px;
-top: 90px;
-width: 10px;
-height: 50px;
-background-color: #5B03CA;
+  position: relative;
+  left: 155px;
+  top: 90px;
+  width: 10px;
+  height: 50px;
+  background-color: #5B03CA;
 }
 
 .hand-left{

@@ -15,6 +15,7 @@ let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
 
+
 const words = [
   {
     word: 'adopt',
@@ -69,7 +70,7 @@ help.addEventListener('click', function(){
   gallowEls[indexGallowEl].classList.add('active');
   indexGallowEl++;
 });
-const indexOfWord = Math.round(Math.random() * (words.length - 1));
+let indexOfWord = Math.round(Math.random() * (words.length - 1));
 
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('input', function () {
@@ -112,10 +113,11 @@ for (let i = 0; i < inputs.length; i++) {
                 }
               }
             }
-          } else {
-            endLose.style.display = 'flex';
-            main.style.display = 'none';
-          }
+          } 
+          // else {
+          //   endLose.style.display = 'flex';
+          //   main.style.display = 'none';
+          // }
           // inputs[i].style.backgroundColor = "#12a112";
 
         }
@@ -126,27 +128,31 @@ for (let i = 0; i < inputs.length; i++) {
 
 
 restartLose.addEventListener('click', function(){
+  indexOfWord = Math.round(Math.random() * (words.length - 1));
   main.style.display = 'flex';
   endLose.style.display = 'none';
   for (let i = 0; i < inputs.length; i++){
     inputs[i].style.backgroundColor = "#7E46EF";
-     inputs[i].value = '';
-     incorrectInput[i].value = inputs[i].value;
+    inputs[i].value = '';
+    incorrectInput[i].value = inputs[i].value;
   }
   for (let i = 0; i < indexGallowEl; i++){
     gallowEls[i].classList.remove('active');
   }
+  indexGallowEl = 0;
 });
 
 restartWin.addEventListener('click', function(){
+  indexOfWord = Math.round(Math.random() * (words.length - 1));
   main.style.display = 'flex';
   endWin.style.display = 'none';
   for (let i = 0; i < inputs.length; i++){
     inputs[i].style.backgroundColor = "#7E46EF";
-     inputs[i].value = '';
-     incorrectInput[i].value = inputs[i].value;
+    inputs[i].value = '';
+    incorrectInput[i].value = inputs[i].value;
   }
   for (let i = 0; i < indexGallowEl; i++){
     gallowEls[i].classList.remove('active');
   }
+  indexGallowEl = 0;
 });
