@@ -15,7 +15,7 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px;
-  display: none;
+  /* display: none; */
 }
 
 
@@ -26,6 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  display: none;
 }
 
 .background {
@@ -57,6 +59,8 @@ body {
   background: #7E46EF;
   display: block;
   margin:0;
+  width: 350px;
+  height: 100px;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -202,6 +206,7 @@ border: 2px solid rgb(111, 55, 223);
 
 .hang-gallow-gallow {
   background-color: #5B03CA;
+  position: relative;
 }
 
 .stick1{
