@@ -15,9 +15,18 @@ body {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px;
-  /* display: none; */
+
+  display: none;
 }
 
+.end-lose{
+  display: none;
+}
+
+
+.end-win{
+  display: none;
+}
 
 .start {
   min-height: 100vh;
@@ -26,8 +35,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  display: none;
 }
 
 .background {
@@ -130,6 +137,7 @@ border: 2px solid rgb(111, 55, 223);
   background: #7E46EF;
   color: #FFBD59;
   font-size: 40px;
+  position: relative;
 }
 
 .hang-btn{
@@ -211,41 +219,42 @@ border: 2px solid rgb(111, 55, 223);
 
 .stick1{
   position: absolute;
-  top: 340px;
+  top: 240px;
+  left: 20px;
   width: 250px;
   height: 10px;
   background-color: #5B03CA;
 }
 .stick2{
   position: absolute;
-  top: 150px;
-  right: 950px;
+  top:30px;
+  left: 90px;
   width: 10px;
-  height: 200px;
+  height: 220px;
   background-color: #5B03CA;
 }
 .stick3{
   background-color: #5B03CA;
   position: absolute;
-  top: 150px;
-  right: 875px;
-  width: 80px;
+  top: 25px;
+  left: 90px;
+  width: 110px;
   height: 10px;
 }
 .stick4{
   background-color: #5B03CA;
   position: absolute;
-  top: 150px;
-  right: 875px;
-  height: 40px;
+  top: 30px;
+  left: 190px;
+  height: 50px;
   width: 10px;
 }
 
 
 .hang-head {
-  position: relative;
-  left: 180px;
-  top: 50px;
+  position: absolute;
+  left: 200px;
+  top: 120px;
   width: 30px;
   height: 30px;
   background-color: #5B03CA;
@@ -253,18 +262,18 @@ border: 2px solid rgb(111, 55, 223);
 }
 
 .hang-body{
-  position: relative;
-  left: 155px;
-  top: 90px;
+  position: absolute;
+  left: 210px;
+  top: 140px;
   width: 10px;
   height: 50px;
   background-color: #5B03CA;
 }
 
 .hand-left{
-position: relative;
-left: 140px;
-top: 70px;
+position: absolute;
+left: 210px;
+top: 155px;
 width: 35px;
 height: 10px;
 transform: rotate(45deg);
@@ -272,27 +281,27 @@ background-color: #5B03CA;
 }
 
 .hand-right{
-position: relative;
-left: 114px;
-top: 62px;
+position: absolute;
+left: 185px;
+top: 155px;
 width: 35px;
 height: 10px;
 transform: rotate(-45deg);
 background-color: #5B03CA;
 }
 .leg-left{
-position: relative;
-left: 90px;
-top: 115px;
+position: absolute;
+left: 200px;
+top: 200px;
 width: 45px;
 height: 10px;
 transform: rotate(70deg);
 background-color: #5B03CA;
 }
 .leg-right{
-position: relative;
-left: 78px;
-top: 105px;
+position: absolute;
+left: 185px;
+top: 200px;
 width: 45px;
 height: 10px;
 transform: rotate(-70deg);
@@ -308,13 +317,14 @@ background-color: #5B03CA;
   height: 400px;
   margin: 20px;
   padding: 20px;
+  position: relative;
 }
 
 
 .losestick1{
   position: absolute;
-  top: 38%;
-  left: 3%;
+  top: 340px;
+  left: 50px;
   width: 300px;
   height: 10px;
   background-color: #5B03CA;
@@ -322,8 +332,8 @@ background-color: #5B03CA;
 
 .losestick2{
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 100px;
+  left: 100px;
   width: 10px;
   height: 250px;
   background-color: #5B03CA;
@@ -331,8 +341,8 @@ background-color: #5B03CA;
 
 .losestick3{
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 100px;
+  left: 100px;
   width: 100px;
   height: 10px;
   background-color: #5B03CA;
@@ -340,8 +350,8 @@ background-color: #5B03CA;
 
 .losestick4{
   position: absolute;
-  top: 13%;
-  left: 11.8%;
+  top: 100px;
+  left: 190px;
   width: 10px;
   height: 50px;
   background-color: #5B03CA;
@@ -351,8 +361,8 @@ background-color: #5B03CA;
 .losehead{
   background-color: #5B03CA;
   position: absolute;
-  left: 11%;
-  top: 17.5%;
+  left: 175px;
+  top: 140px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -361,8 +371,8 @@ background-color: #5B03CA;
 .losebody{
   background-color: #5B03CA;
   position: absolute;
-  top: 20%;
-  left: 11.75%;
+  top: 160px;
+  left: 190px;
   width: 10px;
   height: 70px;
 }
@@ -370,8 +380,8 @@ background-color: #5B03CA;
 .loselefthand{
   background-color: #5B03CA;
   position: absolute;
-  top: 21%;
-  left: 12.5%;
+  top: 175px;
+  left: 205px;
   width: 10px;
   height: 40px;
   transform: rotate(-45deg);
@@ -380,8 +390,8 @@ background-color: #5B03CA;
 .loserighthand{
   background-color: #5B03CA;
   position: absolute;
-  top: 21%;
-  left: 11%;
+  top: 175px;
+  left: 175px;
   width: 10px;
   height: 40px;
   transform: rotate(45deg);
@@ -390,8 +400,8 @@ background-color: #5B03CA;
 .loseleftleg{
   background-color: #5B03CA;
   position: absolute;
-  top: 26%;
-  left: 11.35%;
+  top: 220px;
+  left: 183px;
   width: 10px;
   height: 50px;
   transform: rotate(20deg);
@@ -400,8 +410,8 @@ background-color: #5B03CA;
 .loserightleg{
   background-color: #5B03CA;
   position: absolute;
-  top: 26%;
-  left: 12.2%;
+  top: 220px;
+  left: 197px;
   width: 10px;
   height: 50px;
   transform: rotate(-20deg);
@@ -420,8 +430,8 @@ background-color: #5B03CA;
   height: 100px;
   font-size: 2.7rem;
   position: absolute;
-  top: 33.3%;
-  left: 30%;
+  top: 320px;
+  left: 600px;
 }
 
 .restart-lose:hover{
@@ -430,9 +440,7 @@ background-color: #5B03CA;
   color: rgb(106, 52, 214);
 }
 
-.end-lose{
-  display: none;
-}
+
 
 .gallowwin{
   color: #FFBD59;
@@ -442,13 +450,14 @@ background-color: #5B03CA;
   height: 400px;
   margin: 20px;
   padding: 20px;
+  position: relative;
 }
 
 
 .winstick1{
   position: absolute;
-  top: 38%;
-  left: 3%;
+  top: 340px;
+  left: 50px;
   width: 300px;
   height: 10px;
   background-color: #5B03CA;
@@ -456,8 +465,8 @@ background-color: #5B03CA;
 
 .winstick2{
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 100px;
+  left: 100px;
   width: 10px;
   height: 250px;
   background-color: #5B03CA;
@@ -465,8 +474,8 @@ background-color: #5B03CA;
 
 .winstick3{
   position: absolute;
-  top: 13%;
-  left: 7%;
+  top: 100px;
+  left: 100px;
   width: 100px;
   height: 10px;
   background-color: #5B03CA;
@@ -474,8 +483,8 @@ background-color: #5B03CA;
 
 .winstick4{
   position: absolute;
-  top: 13%;
-  left: 11.8%;
+  top: 100px;
+  left: 190px;
   width: 10px;
   height: 50px;
   background-color: #5B03CA;
@@ -494,8 +503,8 @@ background-color: #5B03CA;
   height: 100px;
   font-size: 2.7rem;
   position: absolute;
-  top: 33.3%;
-  left: 30%;
+  top: 320px;
+  left: 600px;
 }
 
 .restart-win:hover{
@@ -504,66 +513,62 @@ background-color: #5B03CA;
   color: rgb(106, 52, 214);
 }
 
-.winleftleg{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 33%;
-  left: 12.2%;
-  width: 10px;
-  height: 50px;
-  transform: rotate(-20deg);
-}
-
-.winrightleg{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 33%;
-  left: 11.35%;
-  width: 10px;
-  height: 50px;
-  transform: rotate(20deg);
-}
-
-.winrighthand{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 26%;
-  left: 11%;
-  width: 10px;
-  height: 40px;
-  transform: rotate(135deg);
-}
-
-.winlefthand{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 26%;
-  left: 12.5%;
-  width: 10px;
-  height: 40px;
-  transform: rotate(-135deg);
-}
-
-.winbody{
-  background-color: #5B03CA;
-  position: absolute;
-  top: 27%;
-  left: 11.75%;
-  width: 10px;
-  height: 70px;
-}
-
 .winhead{
   background-color: #5B03CA;
   position: absolute;
-  left: 11%;
-  top: 24.5%;
+  left: 175px;
+  top: 215px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
-.end-win{
-  display: none;
+.winbody{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 235px;
+  left: 190px;
+  width: 10px;
+  height: 70px;
+}
+
+.winlefthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 230px;
+  left: 205px;
+  width: 10px;
+  height: 40px;
+  transform: rotate(-135deg);
+}
+
+.winrighthand{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 230px;
+  left: 175px;
+  width: 10px;
+  height: 40px;
+  transform: rotate(135deg);
+}
+
+.winleftleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 295px;
+  left: 183px;
+  width: 10px;
+  height: 50px;
+  transform: rotate(20deg);
+}
+
+.winrightleg{
+  background-color: #5B03CA;
+  position: absolute;
+  top: 295px;
+  left: 197px;
+  width: 10px;
+  height: 50px;
+  transform: rotate(-20deg);
 }
 
