@@ -56,9 +56,9 @@ body {
   0%{
     transform: none;
   } 35% {
-    transform: rotate(1deg);
+    transform: rotate(1.5deg);
   } 70%{
-    transform: rotate(-1deg);
+    transform: rotate(-1.5deg);
   }
 }
 
