@@ -52,6 +52,16 @@ body {
   font-size: 7rem;
 }
 
+@keyframes shake1 {
+  0%{
+    transform: none;
+  } 35% {
+    transform: rotate(1deg);
+  } 70%{
+    transform: rotate(-1deg);
+  }
+}
+
 .start-btn{
   color: #FFBD59;
   background-color: #7E46EF;
@@ -61,16 +71,22 @@ body {
   padding-left: 20px;
   box-shadow: none;
   position: relative;
+  top: 50px;
   width: 320px;
   height: 125px;
 }
 
 
 .start-btn:hover{
-background-color: rgb(111, 55, 223);
-color: #e7a746;
-border: 2px solid rgb(111, 55, 223);
+  background-color: rgb(111, 55, 223);
+  color: #e7a746;
+  border: 2px solid rgb(111, 55, 223);
+  animation-name: shake1;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
 }
+
+
 
 .hang-wrapper {
   display: flex;
