@@ -11,6 +11,7 @@ let restartLose = document.querySelector('.restart-lose');
 let endLose = document.querySelector('.end-lose');
 let restartWin = document.querySelector('.restart-win');
 let endWin = document.querySelector('.end-win');
+let popup = document.querySelector('.popuptext');
 let indexGallowEl = 0;
 let trueAnswers = 0;
 let falseAnswers = 0;
@@ -66,10 +67,20 @@ startBtn.addEventListener('click', function () {
 });
 
 help.addEventListener('click', function(){
-  alert(words[indexOfWord].help);
+  // alert(words[indexOfWord].help);
+  popup.innerHTML = words[indexOfWord].help;
+  popup.classList.toggle("show");
   gallowEls[indexGallowEl].classList.add('active');
   indexGallowEl++;
 });
+
+
+function PopupTextRemove(){
+  popup.innerHTML = "";
+}
+setTimeout(PopupTextRemove, 5000);
+
+
 let indexOfWord = Math.round(Math.random() * (words.length - 1));
 
 for (let i = 0; i < inputs.length; i++) {
